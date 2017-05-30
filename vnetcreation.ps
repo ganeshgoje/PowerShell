@@ -8,7 +8,7 @@ Set-AzureRmContext -SubscriptionName "Developer Program Benefit"
 $resourceGroup="Day2"
 
 ##Create a new Resrouce Group if it is already not there
-NewAzureRmResrouceGroup -name "Day2" -Location "Southeast Asia"
+New-AzureRmResourceGroup -name "Day2" -Location "Southeast Asia"
 
 $frontendSubnet=New-AzureRmVirtualNetworkSubnetConfig -Name "FrontEndSubnet" `
                         -AddressPrefix "10.0.1.0/24" 
